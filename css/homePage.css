@@ -1,0 +1,364 @@
+.hero__wrapper {
+  display: flex;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container_content {
+  min-height: 650px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero__info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 549px;
+  width: 100%;
+}
+
+.hero__info_title {
+  font-size: 60px;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.hero__info_title span {
+  color: var(--clr-blue);
+}
+
+.hero__info_desc {
+  font-size: 20px;
+}
+
+.hero__info_btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero__info_price_btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-blue);
+  padding: 15px;
+  color: var(--clr-white);
+  border-radius: 45px;
+  gap: 10px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero__info_inst_btn {
+  background-color: var(--clr-yellow);
+  border-radius: 45px;
+  padding: 13px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.experience__wrapper {
+  background-color: var(--clr-darkblue);
+}
+
+.experience__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 800px;
+  height: auto;
+}
+
+.experience__cards_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(5rem);
+}
+
+.experience__cards_container img {
+  width: fit-content;
+}
+
+.experience__card {
+  max-width: 382px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(253, 254, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.experience__card_title {
+  font-size: 20px;
+}
+
+.experience__card_desc {
+  font-size: 18px;
+}
+
+.experience__info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience__info_text_container {
+  max-width: 609px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experience__info_top_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience__info_text_title_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience__info_text_about {
+  background-color: var(--clr-blue);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--clr-white);
+  width: fit-content;
+  font-size: 20px;
+}
+
+.experience__info_text_title {
+  color: var(--clr-white);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.experience__info_text_desc {
+  font-size: 20px;
+  color: var(--clr-white);
+}
+
+.experience__info_img_container {
+  flex-shrink: 0;
+}
+
+.experience__info_experience_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.experience__info_experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__info_experience_title {
+  color: var(--clr-yellow);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.experience__info_experience_desc {
+  font-size: 16px;
+  color: var(--clr-white);
+  max-width: 90%;
+}
+
+.experience__companies_container {
+  left: 0;
+  top: 0;
+  position: relative;
+  transform: translateY(-6rem);
+  width: 100%;
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 130px;
+  border-radius: 20px;
+  padding: 70px 0;
+}
+
+.reviews__wrapper {
+  min-height: 800px;
+  height: auto;
+  display: flex;
+}
+
+.reviews__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.reviews__title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.reviews__title span {
+  color: var(--clr-blue);
+}
+
+.reviews__cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.review__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 5rem;
+  padding: 80px 10px 20px 10px;
+  width: 309px;
+  height: 291px;
+}
+
+.review__card_main {
+  background-color: var(--clr-blue);
+}
+
+.review__card img {
+  width: fit-content;
+}
+
+.review__card_img {
+  position: absolute;
+  top: -5rem;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid var(--clr-black);
+  width: fit-content;
+}
+
+.review__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.review__rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review__person_name {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.review__person_name_main {
+  color: var(--clr-white);
+}
+
+.review__text {
+  font-size: 16px;
+  color: var(--clr-black);
+  text-align: center;
+}
+
+.review__text_main {
+  color: var(--clr-white);
+  font-size: 18px;
+}
+
+@media (max-width: 1536px) {
+  .experience__cards_container {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero__container_content {
+    flex-direction: column-reverse;
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .experience__card {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .experience__cards_container {
+    flex-wrap: wrap;
+  }
+
+  .experience__info_container {
+    flex-direction: column;
+  }
+
+  .experience__container {
+    min-height: 1050px;
+  }
+
+  .experience__info_container {
+    gap: 40px;
+  }
+
+  .experience__info_img_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience__info_experience_container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience__info_experience_container {
+    gap: 0;
+  }
+}
+
+@media (max-width: 475px) {
+
+}
+
+@media (max-width: 370px) {
+
+}
