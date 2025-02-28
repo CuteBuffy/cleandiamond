@@ -21,7 +21,6 @@
 
 .footer__nip {
   color: var(--clr-white);
-  touch-action: none;
   font-size: 18px;
   font-weight: 500;
 }
