@@ -20,7 +20,6 @@
 }
 
 .footer__nip {
-  text-decoration: none;
   color: var(--clr-white);
   font-size: 18px;
   font-weight: 500;
