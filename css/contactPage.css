@@ -128,14 +128,21 @@
   justify-content: center;
   cursor: pointer;
   position: relative;
+  background-color: white;
 }
 
 .form__bottom_btns_radio:checked::after {
-  content: '✔';
-  font-size: 15px;
-  color: white;
+  content: '';
+  width: 6px;
+  height: 12px;
+  border-right: 3px solid var(--clr-white);
+  border-bottom: 3px solid var(--clr-white);
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%) rotate(40deg);
 }
+
 
 .form__bottom_btns_radio:checked {
   background-color: #0057ff;

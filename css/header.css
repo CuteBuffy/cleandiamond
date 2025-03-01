@@ -140,11 +140,25 @@
   font-weight: 600;
 }
 
+.header__mini_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__mini_info_number,
+.header__mini_info_location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex: 1;
+}
+
 @media (max-width: 1536px) {}
 
 @media (max-width: 1280px) {
-  .navbar__info_number,
-  .navbar__info_location {
+  .navbar__info {
     display: none;
   }
 }
@@ -171,6 +185,8 @@
     width: 30px;
     height: 30px;
   }
+
+
 }
 
 @media (max-width: 640px) {}
