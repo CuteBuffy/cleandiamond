@@ -58,7 +58,7 @@
 
 .hero__info_container {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 81px;
 }
 
@@ -93,6 +93,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--clr-lightgreen);
   border-radius: 20px;
   padding: 20px;
@@ -102,19 +103,19 @@
 
 .hero__quote_img_top,
 .hero__quote_img_bottom {
-  position: relative;
+  position: absolute;
 }
 
 .hero__quote_img_top {
-  transform: translateY( -2rem);
+  top: -0.75rem;
   align-self: flex-start;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .hero__quote_img_bottom {
-  transform: translateY(2rem);
+  bottom: -0.8rem;
   align-self: flex-end;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 
 .hero__btns_container {
@@ -222,7 +223,7 @@
 }
 
 .reviews__content.about {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 
 .review__card.about {
@@ -263,7 +264,7 @@
 
 @media (max-width: 1536px) {
   .reviews__cards__container.about {
-    gap: 70px;
+    gap: 90px;
   }
 }
 
@@ -295,12 +296,13 @@
   .hero__quote_text {
     font-size: 14px;
   }
+
+  .reviews__content.about {
+    padding: 100px 0 75px 0;
+  }
 }
 
 @media (max-width: 768px) {
-  .reviews__content.about {
-    padding: 75px 0;
-  }
 }
 
 @media (max-width: 640px) {
@@ -312,10 +314,6 @@
 
   .hero__contact_phone_text {
     display: none;
-  }
-
-  .reviews__cards__container.about {
-    gap: 90px;
   }
 }
 
