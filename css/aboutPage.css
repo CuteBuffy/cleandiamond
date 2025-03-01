@@ -298,7 +298,9 @@
 }
 
 @media (max-width: 768px) {
-  
+  .reviews__content.about {
+    padding: 75px 0;
+  }
 }
 
 @media (max-width: 640px) {
