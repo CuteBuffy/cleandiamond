@@ -225,7 +225,6 @@
 .hero__info_qrcode {
   border-radius: 15px;
   flex-shrink: 0;
-  border: 1px solid red;
 }
 
 .hero__info_qrcode img {
