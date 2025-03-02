@@ -1,6 +1,4 @@
-.hero__wrapper {
-  padding: 50px 0;
-}
+
 
 .hero__container {
   min-height: 70vh;
@@ -8,10 +6,14 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 50px 0;
 }
 
 .hero__img_container img {
   width: 100%;
+  height: 100%;
+  max-width: 503px;
+  max-height: 516px;
 }
 
 .hero__content_container {
@@ -75,6 +77,13 @@
   gap: 10px;
 }
 
+.hero__card_container img {
+  width: 100%;
+  height: 100%;
+  max-width: 70px;
+  max-height: 70px;
+}
+
 .hero__card_text_container {
   display: flex;
   flex-direction: column;
@@ -103,6 +112,13 @@
 
 .hero__quote_img_top,
 .hero__quote_img_bottom {
+  width: 100%;
+  height: 100%;
+  max-width: 44px;
+  max-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
 }
 
@@ -113,7 +129,7 @@
 }
 
 .hero__quote_img_bottom {
-  bottom: -0.8rem;
+  bottom: -0.75rem;
   align-self: flex-end;
   padding-right: 0.5rem;
 }
@@ -134,6 +150,20 @@
   color: var(--clr-white);
   font-size: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero__contact_btn img {
+  width: 100%;
+  height: 100%;
+  max-width: 10px;
+  max-height: 20px;
+}
+
+.hero__contact_phone_img img {
+  width: 100%;
+  height: 100%;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .hero__contact_phone {
@@ -222,8 +252,17 @@
   text-align: center;
 }
 
+.reviews__wrapper.about {
+  min-height: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .reviews__content.about {
-  padding: 50px 0;
+  display: flex;
+  padding: 125px 0;
 }
 
 .review__card.about {
@@ -237,15 +276,29 @@
   height: 269px;
   width: 100%;
   max-width: 242px;
-  padding: 60px 10px 20px 10px;
+  padding: 35px 10px 20px 10px;
 }
 
 .review__card_img.about {
   top: -4rem;
 }
 
+.review__card_img.about {
+  width: 100%;
+  height: 100%;
+  max-width: 108px;
+  max-height: 108px;
+}
+
 .review__name.about {
   gap: 10px;
+}
+
+.review__name.about > .review__rating img {
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .review__person_name.about,
@@ -260,6 +313,9 @@
 
 .reviews__cards__container.about {
   gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1536px) {

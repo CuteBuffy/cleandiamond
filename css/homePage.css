@@ -16,6 +16,13 @@
   gap: 3rem;
 }
 
+.hero__img_container img {
+  width: 100%;
+  height: 100%;
+  max-width: 531px;
+  max-height: 531px;
+}
+
 .hero__info_container {
   display: flex;
   flex-direction: column;
@@ -64,6 +71,20 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+.hero__info_price_btn img {
+  width: 100%;
+  height: 100%;
+  max-width: 10px;
+  max-height: 20px;
+}
+
+.hero__info_inst_btn img {
+  width: 100%;
+  height: 100%;
+  max-width: 25px;
+  max-height: 25px;
+}
+
 .experience__wrapper {
   background-color: var(--clr-darkblue);
 }
@@ -96,6 +117,13 @@
   border-radius: 20px;
   padding: 30px 60px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.experience__card img {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .experience__card_title {
@@ -155,6 +183,13 @@
   flex-shrink: 0;
 }
 
+.experience__info_img_container img {
+  width: 100%;
+  height: 100%;
+  max-width: 494px;
+  max-height: 361px;
+}
+
 .experience__info_experience_container {
   display: flex;
   align-items: center;
@@ -194,6 +229,13 @@
   border-radius: 20px;
   padding: 70px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience__company img {
+  width: 100%;
+  height: 100%;
+  max-width: 226px;
+  max-height: 60px;
 }
 
 @media (max-width: 1536px) {
