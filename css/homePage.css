@@ -292,6 +292,10 @@
   .experience__info_experience_container {
     gap: 0;
   }
+
+  .hero__info_title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 475px) {
