@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clean Diamond | About</title>
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/reviews.css">
-  <link rel="stylesheet" href="../css/aboutPage.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
@@ -98,21 +95,21 @@
       </div>
     </div>
   </header>
-  <section class="hero__wrapper">
-    <div class="container hero__container">
-      <div class="hero__img_container">
+  <section class="hero__wrapper_about">
+    <div class="container hero__container_about">
+      <div class="hero__img_container_about">
         <img src="../imgs/about_hero_img.png" alt="">
       </div>
-      <div class="hero__content_container">
+      <div class="hero__content_container_about">
         <div class="hero__text_container">
           <div class="hero__content_title_container">
             <div class="hero__content_title_text">
               <p class="hero__content_title_about">O nas</p>
-              <h4 class="hero__content_title">Czystość <span>bez żadnych problemów!</span></h4>
+              <h4 class="hero__content_title_about_about">Czystość <span>bez żadnych problemów!</span></h4>
             </div>
-            <p class="hero__content_title_desc">Jesteśmy zespołem profesjonalnych usług sprzątających. Wiemy, jakie jest idealny porządek. Zawsze robimy-perfekcyjnie. Mamy duże doświadczenie i zrobimy wszystko, aby zapewnić nieskazitelną czystość waszym obiektem</p>
+            <p class="hero__content_title_desc_about">Jesteśmy zespołem profesjonalnych usług sprzątających. Wiemy, jakie jest idealny porządek. Zawsze robimy-perfekcyjnie. Mamy duże doświadczenie i zrobimy wszystko, aby zapewnić nieskazitelną czystość waszym obiektem</p>
           </div>
-          <div class="hero__info_container">
+          <div class="hero__info_container_about">
             <div class="hero__cards_container">
               <div class="hero__card_container">
                 <img src="../icons/verified_icon.png" alt="">
@@ -144,18 +141,18 @@
             </div>
           </div>
         </div>
-        <div class="hero__btns_container">
-          <a class="hero__contact_btn" href="../pages/contact.html">
-            <p class="hero__contact_btn_text">Skontaktuj się z nami</p>
+        <div class="hero__btns_container_about">
+          <a class="hero__contact_btn_about" href="../pages/contact.html">
+            <p class="hero__contact_btn_text_about">Skontaktuj się z nami</p>
             <img src="../icons//arrow_right_white.svg" alt="">
           </a>
-          <div class="hero__contact_phone">
-            <div class="hero__contact_phone_img">
+          <div class="hero__contact_phone_about">
+            <div class="hero__contact_phone_img_about">
               <img src="../icons/phone.svg" alt="">
             </div>
-            <div class="hero__contact_phone_text">
-              <p class="hero__contact_phone_title">Telefon</p>
-              <p class="hero__contact_phone_desc">+48-881-016-026</p>
+            <div class="hero__contact_phone_text_about">
+              <p class="hero__contact_phone_title_about">Telefon</p>
+              <p class="hero__contact_phone_desc_about">+48-881-016-026</p>
             </div>
           </div>
         </div>
@@ -314,25 +311,6 @@
     </div>
   </footer>
 
-  <script>
-    const navbarModal = document.querySelector(".header__mini_wrapper");
-    const navbarBurgerBtn = document.querySelector(".navbar__burger_btn");
-
-    navbarBurgerBtn.addEventListener("click", () => {
-      const isHidden = getComputedStyle(navbarModal).display === "none";
-
-      if (isHidden) {
-        navbarModal.classList.add("open")
-      } else {
-        navbarModal.classList.remove("open")
-      }
-    });
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 768 && navbarModal.classList.contains("open")) {
-        navbarModal.classList.remove("open")
-      }
-    })
-  </script>
+  <script src="js/navbarHandler.js"></script>
 </body>
 </html>

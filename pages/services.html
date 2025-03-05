@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clean Diamond | Services</title>
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/services.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
@@ -270,26 +268,6 @@
     </div>
   </footer>
 
-  <script>
-    const navbarModal = document.querySelector(".header__mini_wrapper");
-    const navbarBurgerBtn = document.querySelector(".navbar__burger_btn");
-
-    navbarBurgerBtn.addEventListener("click", () => {
-      const isHidden = getComputedStyle(navbarModal).display === "none";
-
-      if (isHidden) {
-        navbarModal.classList.add("open")
-      } else {
-        navbarModal.classList.remove("open")
-      }
-    });
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 768 && navbarModal.classList.contains("open")) {
-        navbarModal.classList.remove("open")
-      }
-    })
-  </script>
-
+  <script src="js/navbarHandler.js"></script>
 </body>
 </html>

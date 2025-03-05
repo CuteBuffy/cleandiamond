@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clean Diamond</title>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/homePage.css">
-  <link rel="stylesheet" href="../css/reviews.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -99,23 +96,23 @@
       </div>
     </div>
   </header>
-  <section class="hero__wrapper">
-    <div class="container hero__container">
-      <div class="hero__container_content">
-        <div class="hero__info_container">
-          <h1 class="hero__info_title"><span>Czystość</span> bez kompromisów!</h1>
-          <p class="hero__info_desc">Niezawodna usługa sprzątania dla domów i firm. Pracujemy sprawnie, szybko i z miłością do czystości!</p>
-          <div class="hero__info_btns">
-            <a href="#" class="hero__info_price_btn">
+  <section class="hero__wrapper_home">
+    <div class="container hero__container_home">
+      <div class="hero__container_content_home">
+        <div class="hero__info_container_home">
+          <h1 class="hero__info_title_home"><span>Czystość</span> bez kompromisów!</h1>
+          <p class="hero__info_desc_home">Niezawodna usługa sprzątania dla domów i firm. Pracujemy sprawnie, szybko i z miłością do czystości!</p>
+          <div class="hero__info_btns_home">
+            <a href="#" class="hero__info_price_btn_home">
               <p class="hero__info_price_btn_text">Cennik usług</p>
               <img src="icons/arrow_right_white.svg" alt="">
             </a>
-            <a href="#" class="hero__info_inst_btn">
+            <a href="#" class="hero__info_inst_btn_home">
               <img src="icons/instagram_blue.png" alt="">
             </a>
           </div>
         </div>
-        <div class="hero__img_container">
+        <div class="hero__img_container_home">
           <img src="imgs/home_hero_img.png" alt="">
         </div>
       </div>
@@ -292,26 +289,7 @@
     </div>
   </footer>
 
-  <script>
-    const navbarModal = document.querySelector(".header__mini_wrapper");
-    const navbarBurgerBtn = document.querySelector(".navbar__burger_btn");
-
-    navbarBurgerBtn.addEventListener("click", () => {
-      const isHidden = getComputedStyle(navbarModal).display === "none";
-
-      if (isHidden) {
-        navbarModal.classList.add("open")
-      } else {
-        navbarModal.classList.remove("open")
-      }
-    });
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 768 && navbarModal.classList.contains("open")) {
-        navbarModal.classList.remove("open")
-      }
-    })
-  </script>
+  <script src="js/navbarHandler.js"></script>
 
 </body>
 

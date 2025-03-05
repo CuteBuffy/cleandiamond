@@ -68,6 +68,9 @@ button {
   padding: 0 2rem;
 }
 
+.fixed {
+  overflow: hidden;
+}
 
 @media (min-width: 475px) {
   .container {

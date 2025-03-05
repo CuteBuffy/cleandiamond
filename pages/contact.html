@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clean Diamond | Contact</title>
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/contactPage.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -98,11 +96,11 @@
       </div>
     </div>
   </header>
-  <section class="hero__wrapper">
-    <div class="hero__wrapper_img">
+  <section class="hero__wrapper_contact">
+    <div class="hero__wrapper_img_contact">
       <img src="../imgs/contact_hero_img.png" alt="">
     </div>
-    <div class="container hero__container">
+    <div class="container hero__container_contact">
       <form class="hero__form_container">
         <p class="hero__form_title">Ми зв'яжемося з вами</p>
         <div class="form__inputs__container">
@@ -130,11 +128,11 @@
           <button type="submit" class="form__bottom_btns_send">Надіслати</button>
         </div>
       </form>
-      <div class="hero__info_container">
-        <div class="hero__info_wrapper">
-          <div class="hero__info_title_container">
-            <h3 class="hero__info_title"><span>Чистота</span> без турбот!</h3>
-            <p class="hero__info_desc">Професійне прибирання з любов’ю до деталей</p>
+      <div class="hero__info_container_contact">
+        <div class="hero__info_wrapper_contact">
+          <div class="hero__info_title_container_contact">
+            <h3 class="hero__info_title_contact"><span>Чистота</span> без турбот!</h3>
+            <p class="hero__info_desc_contact">Професійне прибирання з любов’ю до деталей</p>
           </div>
           <div class="hero__info_content_container">
             <div class="hero__info_socials">
@@ -214,26 +212,8 @@
     </div>
   </footer>
 
-  <script>
-    const navbarModal = document.querySelector(".header__mini_wrapper");
-    const navbarBurgerBtn = document.querySelector(".navbar__burger_btn");
+  <script src="js/navbarHandler.js"></script>
 
-    navbarBurgerBtn.addEventListener("click", () => {
-      const isHidden = getComputedStyle(navbarModal).display === "none";
-
-      if (isHidden) {
-        navbarModal.classList.add("open")
-      } else {
-        navbarModal.classList.remove("open")
-      }
-    });
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 768 && navbarModal.classList.contains("open")) {
-        navbarModal.classList.remove("open")
-      }
-    })
-  </script>
 </body>
 
 </html>
