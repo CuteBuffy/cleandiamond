@@ -11,7 +11,7 @@
 
 .services__content_container {
   display: flex;
-  gap: 80px;
+  gap: 100px;
 }
 
 .services__content_left {
@@ -182,11 +182,13 @@
 }
 
 @media (max-width: 1536px) {
-
+  .services__content_container {
+    gap: 80px;
+  }
 }
 
 @media (max-width: 1280px) {
-
+  
 }
 
 @media (max-width: 1024px) {
