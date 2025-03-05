@@ -702,7 +702,6 @@
 
 .services__content_left_btns {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
@@ -834,13 +833,13 @@
 
 .services__card_title {
   color: var(--clr-white);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .services__card_desc {
   color: var(--clr-white);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   overflow-wrap: anywhere;
 }
@@ -1611,7 +1610,7 @@
   .service__info_main_title_text,
   .service__info_price_variant_title,
   .service__info_price {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .hero__container_contact {
@@ -1622,6 +1621,10 @@
   .hero__info_wrapper_contact {
     gap: 1rem;
   }
+
+  .services__card {
+    padding: 10px 15px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1629,8 +1632,12 @@
     gap: 0;
   }
 
+  .services__content_img {
+    overflow: visible;
+  }
+
   .services__content_img img {
-    transform: translateX(0);
+    transform: translateX(1rem);
     width: 100%;
     max-width: none;
   }
@@ -1642,6 +1649,14 @@
 
   .hero__contact_phone_text_about {
     display: none;
+  }
+
+  .price__main {
+    display: none;
+  }
+
+  .service__info_main_title {
+    gap: 10px;
   }
 }
 
