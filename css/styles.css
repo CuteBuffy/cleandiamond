@@ -1877,6 +1877,16 @@
 }
 
 @media (max-width: 640px) {
+
+  .hero__services_divider {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero__services_divider_desc {
+    max-width: none;
+  }
+
   .experience__info_experience_container {
     gap: 0;
   }
