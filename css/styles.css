@@ -163,7 +163,7 @@
   border-radius: 5px;
 }
 
-.header__mini_link img {
+.header__mini_link > img {
   width: 100%;
   height: 100%;
   max-width: 15px;
@@ -204,6 +204,14 @@
   justify-content: center;
   gap: 15px;
   flex: 1;
+}
+
+.header__mini_info_number img,
+.header__mini_info_location img {
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .hero__wrapper_home {
