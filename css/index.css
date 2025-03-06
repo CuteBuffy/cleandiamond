@@ -31,6 +31,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: var(--clr-grey);
 }
@@ -68,7 +72,7 @@ button {
   padding: 0 2rem;
 }
 
-.fixed {
+.overflow_hidden {
   overflow: hidden;
 }
 

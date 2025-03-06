@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clean Diamond | Contact</title>
+  <title>Clean Diamond | Price Calculator</title>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -34,10 +34,10 @@
             <a href="about.html" class="navbar__link">
               <li>O nas</li>
             </a>
-            <a href="contact.html" class="navbar__link navbar__active">
+            <a href="contact.html" class="navbar__link">
               <li>Kontakty</li>
             </a>
-            <a href="priceCalculator.html" class="navbar__link">
+            <a href="priceCalculator.html" class="navbar__link navbar__active">
               <li>Poznaj cenę</li>
             </a>
             <a class="navbar__btn" href="#">Katalog</a>
@@ -69,14 +69,14 @@
           <a class="header__mini_link" href="contact.html">
             <div class="header__mini_link_info">
               <img src="../icons/phone_icon.svg" alt="">
-              <p class="header__mini_link_info_text header__mini_active">Kontakty</p>
+              <p class="header__mini_link_info_text">Kontakty</p>
             </div>
             <img src="../icons/arrow_right.svg" alt="">
           </a>
           <a class="header__mini_link" href="priceCalculator.html">
             <div class="header__mini_link_info">
               <img src="../icons/calculator_icon.png" alt="">
-              <p class="header__mini_link_info_text">Poznaj cenę</p>
+              <p class="header__mini_link_info_text header__mini_active">Poznaj cenę</p>
             </div>
             <img src="../icons/arrow_right.svg" alt="">
           </a>
@@ -96,70 +96,122 @@
       </div>
     </div>
   </header>
-  <section class="hero__wrapper_contact">
-    <div class="hero__wrapper_img_contact">
-      <img src="../imgs/contact_hero_img.png" alt="">
+  <section class="hero__wrapper_calc">
+    <div class="hero__title_calc_wrapper">
+      <div class="container hero__title_calc_container">
+        <h4 class="hero__title_calc_text"><span>Wybierz, co Cię interesuje</span> a my obliczymy cenę!</h4>
+        <img src="../imgs/cleaning_utils_img.png" alt="">
+      </div>
     </div>
-    <div class="container hero__container_contact">
-      <form class="hero__form_container">
-        <p class="hero__form_title">Ми зв'яжемося з вами</p>
+    <div class="container hero__content_calc_container">
+      <form class="hero__form_container hero__calc_form">
+        <p class="hero__form_title">Obliczymy cenę dla Ciebie.</p>
         <div class="form__inputs__container">
           <div class="form__input_container">
-            <label class="form__name_input_text" for="name">Ім'я</label>
-            <input type="text" id="name" autocomplete="name" class="form__input_field" placeholder="Христина Соломій">
+            <label class="form__name_input_text" for="name">Imię</label>
+            <input type="text" id="name" autocomplete="name" class="form__input_field" placeholder="Mateusz Kowalski">
           </div>
 
           <div class="form__input_container">
-            <label class="form__name_input_text" for="email">Пошта</label>
+            <label class="form__name_input_text" for="email">E-mail</label>
             <input type="email" id="email" autocomplete="email" class="form__input_field"
               placeholder="testmail.gmail.com">
           </div>
 
           <div class="form__input_container form__textarea_container">
-            <label class="form__name_input_text" for="work">Обсяг роботи</label>
-            <textarea id="work" class="form__input_field form__textarea" placeholder="Опис замовлення"></textarea>
+            <label class="form__name_input_text" for="work">Zakres pracy</label>
+            <textarea id="work" class="form__input_field form__textarea" placeholder="Opis zamówienia."></textarea>
           </div>
         </div>
+        <p class="form__error_msg">Aby kontynuować, wybierz interesującą Cię usługę z listy!</p>
         <div class="form__bottom_btns">
           <div class="form__bottom_btns_agree">
             <input type="checkbox" id="policy" class="form__bottom_btns_radio">
-            <label for="policy" class="form__bottom_btn_agree_text">Погоджуюся з політикою конф.</label>
+            <label for="policy" class="form__bottom_btn_agree_text">Zgadzam się z polityką prywatności.</label>
           </div>
-          <button type="submit" class="form__bottom_btns_send">Надіслати</button>
+          <button type="submit" class="form__bottom_btns_send">Wyślij.</button>
         </div>
       </form>
-      <div class="hero__info_container_contact">
-        <div class="hero__info_wrapper_contact">
-          <div class="hero__info_title_container_contact">
-            <h3 class="hero__info_title_contact"><span>Чистота</span> без турбот!</h3>
-            <p class="hero__info_desc_contact">Професійне прибирання з любов’ю до деталей</p>
-          </div>
-          <div class="hero__info_content_container">
-            <div class="hero__info_socials">
-              <div class="hero__info_social">
-                <img src="../icons/phone_big.png" alt="">
-                <div class="hero__info_social_text">
-                  <h4 class="hero__info_social_title">Телефон / WhatsApp</h4>
-                  <p class="hero__info_social_desc">+48-881-026-026</p>
-                </div>
-              </div>
-              <div class="hero__info_social">
-                <img src="../icons/facebook_logo.png" alt="">
-                <div class="hero__info_social_text">
-                  <h4 class="hero__info_social_title">FaceBook</h4>
-                  <p class="hero__info_social_desc">cleaning_gliwice</p>
-                </div>
-              </div>
-              <div class="hero__info_social">
-                <img src="../icons/envelope.png" alt="">
-                <div class="hero__info_social_text">
-                  <h4 class="hero__info_social_title">Ел. пошта</h4>
-                  <p class="hero__info_social_desc">cleandiamond.iryna@gmail.com</p>
-                </div>
-              </div>
+      <div class="hero__services_lists_container">
+        <div class="hero__services_list">
+          <h5 class="hero__services_title">Rodzaj sprzątania</h5>
+          <div class="hero__services">
+            <div class="hero__service">
+              <p class="hero__service_name">regularne sprzątanie</p>
+              <input type="checkbox" class="hero__service_btn"></input>
             </div>
-            <div class="hero__info_qrcode">
-              <img src="../imgs/qrcode_home.png" alt="">
+            <div class="hero__service">
+              <p class="hero__service_name">sprzątanie generalne</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">sprzątanie podstawowe</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">sprzątanie po remoncie</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">sprzątanie po lokatorach</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">mycie okien</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">pranie tapicerki</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">sprzątanie obiektów handlowych</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">sprzątanie biura</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+          </div>
+        </div>
+        <div class="hero__services_divider">
+          <h5 class="hero__services_divider_title">Powierzchnia m2</h5>
+          <p class="hero__services_divider_desc">23m3</p>
+        </div>
+        <div class="hero__services_list">
+          <h5 class="hero__services_title">Dodatkowe usługi</h5>
+          <div class="hero__services">
+            <div class="hero__service">
+              <p class="hero__service_name">pranie tapicerki</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">mycie okien</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">mycie piekarnika</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">czyszczenie wnętrza okapu i filtrów</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">mycie i dezynfekcja wnętrza lodówki</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">czyszczenie kuchenki mikrofalowej</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">czyszczenie pralki w środku</p>
+              <input type="checkbox" class="hero__service_btn"></input>
+            </div>
+            <div class="hero__service">
+              <p class="hero__service_name">czyszczenie wnętrza szafek kuchennych</p>
+              <input type="checkbox" class="hero__service_btn"></input>
             </div>
           </div>
         </div>
