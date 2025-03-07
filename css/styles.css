@@ -1556,6 +1556,7 @@
   height: 210px;
   max-width: 483px;
   max-height: 210px;
+  margin-right: 4rem;
   transform: translateX(-0.5rem)
 }
 
@@ -1726,7 +1727,7 @@
   }
 
   .hero__title_calc_text {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
