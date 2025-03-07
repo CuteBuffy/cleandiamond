@@ -2070,6 +2070,10 @@
 
 @media (max-width: 640px) {
 
+  .hero__wrapper_home::before {
+    transform: translate(-75%, 100%);
+  }
+
   .hero__services_divider {
     flex-direction: column;
     gap: 15px;
