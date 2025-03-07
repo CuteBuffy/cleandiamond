@@ -126,6 +126,7 @@
   justify-content: center;
   background-color: rgba(243, 243, 250, 0.95);
   z-index: 10;
+  touch-action: none;
 }
 
 .header__mini_wrapper.open {
