@@ -887,12 +887,23 @@
   width: 100%;
   height: 300px;
   overflow: hidden;
+  position: relative;
+  clip-path: polygon(0 100%, 100% 60%, 100% 0, 0 0);
 }
 
 .hero__wrapper_img_contact img {
   width: 100%;
-  height: 100%;
+  height: 700px;
   object-fit: cover;
+  transform: translateY(-20rem);
+}
+
+.hero__wrapper_img_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hero__form_container {
@@ -970,8 +981,16 @@
   gap: 10px;
 }
 
+.form__bottom_btns_agree:hover {
+  cursor: pointer;
+}
+
 .form__bottom_btn_agree_text {
   font-size: 14px;
+}
+
+.form__bottom_btn_agree_text:hover {
+  cursor: pointer;
 }
 
 .form__bottom_btns_send {
@@ -1505,16 +1524,25 @@
 .hero__service {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
-  border-left: 1px solid #97969B;
   gap: 20px;
+}
+
+.hero__service:hover {
+  cursor: pointer;
 }
 
 .hero__service_name {
   font-size: 18px;
   font-weight: 500;
+  height: 100%;
   flex: 1;
   overflow-wrap: anywhere;
+  border-left: 1px solid #97969B;
+  padding: 8px 12px;
+}
+
+.hero__service_name:hover {
+  cursor: pointer;
 }
 
 .hero__services_lists_container {
@@ -1535,8 +1563,9 @@
   font-size: 20px;
 }
 
-.hero__services_divider_desc {
+.hero__services_divider_input {
   background-color: #F8F8F8;
+  border: none;
   border-radius: 5px;
   padding: 13px 20px;
   width: 100%;
@@ -1544,8 +1573,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #97969B;
   font-size: 16px;
+}
+
+.hero__services_divider_input::placeholder {
+  color: #97969B;
+}
+
+.hero__services_divider_input:focus {
+  outline: none;
 }
 
 .hero__service_btn {
@@ -1616,11 +1654,20 @@
   }
 
   .hero__container_contact {
-    top: -80px;
+    top: -50px;
   }
 }
 
 @media (max-width: 1024px) {
+
+  .navbar__links {
+    gap: 15px;
+  }
+
+  .navbar__link,
+  .navbar__btn {
+    font-size: 17px;
+  }
 
   .footer__divider {
     display: none;
@@ -1731,10 +1778,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .hero__container_contact {
-    top: -60px;
-  }
-
   .hero__info_content_container {
     flex-direction: column;
   } 
@@ -1807,6 +1850,10 @@
 }
 
 @media (max-width: 768px) {
+
+  .container {
+    padding: 0 2rem;
+  }
 
   .info__img_container img {
     object-position: -45rem;
@@ -1887,7 +1934,7 @@
   }
 
   .hero__container_contact {
-    top: -120px;
+    top: -140px;
     flex-direction: column;
   }
 
@@ -1907,7 +1954,7 @@
     gap: 15px;
   }
 
-  .hero__services_divider_desc {
+  .hero__services_divider_input {
     max-width: none;
   }
 
