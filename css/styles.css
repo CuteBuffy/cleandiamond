@@ -234,7 +234,7 @@
   height: 250px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(200px);
+  filter: blur(300px);
   top: 50%;
   left: 0;
   transform: translate(-75%, -160%);
@@ -247,7 +247,7 @@
   height: 250px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(200px);
+  filter: blur(300px);
   top: 50%;
   left: 0;
   transform: translate(-75%, -120%);
