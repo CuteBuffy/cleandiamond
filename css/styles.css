@@ -317,7 +317,7 @@
 .hero__info_title_home {
   font-size: 60px;
   width: 100%;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .hero__info_title_home span {
@@ -2077,7 +2077,11 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
+
+  .hero__info_title_home {
+    font-size: 30px;
+  }
 
   .info__img_container img {
     object-position: -50rem;
