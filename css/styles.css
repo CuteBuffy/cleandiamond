@@ -230,37 +230,6 @@
   position: relative;
 }
 
-.hero__wrapper_home::after,
-.services__wrapper::after,
-.hero__wrapper_calc::after {
-  content: "";
-  position: fixed;
-  width: 250px;
-  height: 250px;
-  background: rgba(73, 104, 247);
-  border-radius: 50%;
-  filter: blur(200px);
-  top: 0;
-  right: 0;
-  transform: translate(0, -20%);
-  z-index: -1;
-}
-
-.hero__wrapper_about::after,
-.hero__wrapper_contact::after {
-  content: "";
-  position: fixed;
-  width: 250px;
-  height: 250px;
-  background: rgba(73, 104, 247);
-  border-radius: 50%;
-  filter: blur(200px);
-  top: 0;
-  right: 0;
-  transform: translate(0, -20%);
-  z-index: -1;
-}
-
 .services__wrapper::before {
   content: "";
   position: fixed;
