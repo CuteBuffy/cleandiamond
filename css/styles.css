@@ -126,7 +126,6 @@
   justify-content: center;
   background-color: rgba(243, 243, 250, 0.95);
   z-index: 10;
-  touch-action: none;
 }
 
 .header__mini_wrapper.open {
@@ -803,7 +802,7 @@
 }
 
 .services__wrapper {
-  margin-top: 60px;
+  margin-top: calc(88px + 60px);
   margin-bottom: 60px;
 }
 
@@ -2004,7 +2003,7 @@
   }
 
   .hero__wrapper_calc {
-    margin-top: 1.5rem;
+    margin-top: calc(88px + 1.5rem);
   }
 
   .hero__title_calc_container img {
