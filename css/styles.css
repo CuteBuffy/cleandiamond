@@ -276,7 +276,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(350px);
+  filter: blur(1000px);
   top: 0;
   left: 0;
   transform: translate(-75%, 10%);
