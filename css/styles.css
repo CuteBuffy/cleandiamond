@@ -248,7 +248,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(250px);
+  filter: blur(350px);
   top: 0;
   left: 0;
   transform: translate(-75%, 25%);
@@ -262,7 +262,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(250px);
+  filter: blur(350px);
   top: 0;
   left: 0;
   transform: translate(-75%, 40%);
@@ -276,7 +276,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(250px);
+  filter: blur(350px);
   top: 0;
   left: 0;
   transform: translate(-75%, 10%);
@@ -290,7 +290,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(250px);
+  filter: blur(350px);
   top: 0;
   left: 0;
   transform: translate(-75%, 60%);
@@ -304,7 +304,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(250px);
+  filter: blur(350px);
   top: 0;
   left: 0;
   transform: translate(-75%, 30%);
