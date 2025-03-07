@@ -227,17 +227,34 @@
   position: relative;
 }
 
-.hero__wrapper_home::after {
+.hero__wrapper_home::after,
+.services__wrapper::after,
+.hero__wrapper_calc::after {
   content: "";
   position: absolute;
   width: 250px;
   height: 250px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(275px);
+  filter: blur(220px);
   top: 0;
   right: 0;
   transform: translate(0, -80%);
+  z-index: -1;
+}
+
+.hero__wrapper_about::after,
+.hero__wrapper_contact::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(73, 104, 247);
+  border-radius: 50%;
+  filter: blur(220px);
+  top: 0;
+  right: 0;
+  transform: translate(0, -50%);
   z-index: -1;
 }
 
@@ -248,7 +265,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(350px);
+  filter: blur(220px);
   top: 0;
   left: 0;
   transform: translate(-75%, 25%);
@@ -262,7 +279,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(350px);
+  filter: blur(220px);
   top: 0;
   left: 0;
   transform: translate(-75%, 40%);
@@ -276,7 +293,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(1000px);
+  filter: blur(220px);
   top: 0;
   left: 0;
   transform: translate(-75%, 10%);
@@ -290,7 +307,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(350px);
+  filter: blur(220px);
   top: 0;
   left: 0;
   transform: translate(-75%, 60%);
@@ -304,7 +321,7 @@
   height: 500px;
   background: rgba(73, 104, 247);
   border-radius: 50%;
-  filter: blur(350px);
+  filter: blur(220px);
   top: 0;
   left: 0;
   transform: translate(-75%, 30%);
