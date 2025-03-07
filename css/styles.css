@@ -2071,7 +2071,7 @@
 @media (max-width: 640px) {
 
   .hero__wrapper_home::before {
-    transform: translate(-75%, 100%);
+    transform: translate(-75%, 60%);
   }
 
   .hero__services_divider {
