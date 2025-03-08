@@ -392,14 +392,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.hero__info_inst_btn_home {
-  background-color: var(--clr-yellow);
-  flex-shrink: 0;
-  border-radius: 45px;
-  padding: 13px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
 .hero__info_price_btn_home img {
   width: 100%;
   height: 100%;
@@ -410,8 +402,8 @@
 .hero__info_inst_btn_home img {
   width: 100%;
   height: 100%;
-  max-width: 25px;
-  max-height: 25px;
+  max-width: 41px;
+  max-height: 41px;
 }
 
 .experience__wrapper {
@@ -558,7 +550,7 @@
   flex-wrap: wrap;
   gap: 130px;
   border-radius: 20px;
-  padding: 70px 0;
+  padding: 70px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -1741,6 +1733,11 @@
 }
 
 @media (max-width: 1536px) {
+
+  .experience__companies_container {
+    gap: 100px;
+  }
+
   .experience__cards_container {
     gap: 4rem;
   }
@@ -1751,6 +1748,10 @@
 
   .reviews__cards__container.about {
     gap: 90px;
+  }
+
+  .navbar__info {
+    gap: 20px;
   }
 }
 
@@ -1795,7 +1796,7 @@
 
   .navbar__link,
   .navbar__btn {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .footer__divider {
@@ -1808,14 +1809,20 @@
     gap: 30px;
   }
 
-  .footer__top {
+  .footer__top,
+  .footer__bottom,
+  .footer__top_logo {
     flex-direction: column;
     gap: 30px;
   }
 
-  .footer__top_logo {
+  .footer__links_bottom {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+  }
+
+  .footer__link_bottom img {
+    display: none;
   }
 
   .footer__top_nip {
@@ -1829,10 +1836,6 @@
   .footer__links_top {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .footer__links_bottom {
-    display: none;
   }
 
   .footer__bottom {
@@ -2122,6 +2125,10 @@
 }
 
 @media (max-width: 475px) {
+  .hero__info_price_btn_home {
+    flex: 1;
+    justify-content: center;
+  }
 
   .navbar__info_location {
     gap: 5px;
